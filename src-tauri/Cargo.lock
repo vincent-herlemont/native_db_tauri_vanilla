@@ -1585,11 +1585,14 @@ dependencies = [
 
 [[package]]
 name = "native_db"
-version = "0.5.3"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "27182169b7a825037923cf6c62ac76f6f5df66f7d6f9b8a85fe1ad5d12eb2fb5"
 dependencies = [
  "native_db_macro",
  "native_model",
- "redb",
+ "redb 1.5.1",
+ "redb 2.1.0",
  "serde",
  "skeptic",
  "thiserror",
@@ -1597,7 +1600,9 @@ dependencies = [
 
 [[package]]
 name = "native_db_macro"
-version = "0.5.3"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bf27ba40601fb6888260c815874d4d36b47e8288e99a5c0c1af59f4b854bef69"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1606,9 +1611,9 @@ dependencies = [
 
 [[package]]
 name = "native_model"
-version = "0.4.6"
+version = "0.4.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "45cbed78bd94d18bd176272101d13b23b9ad4a9373f77dad05ec0f9782b2b0dc"
+checksum = "455bd64fa965415bcbac347c34b60e00e2eff65b5e5e2c60bb14d83a011a757a"
 dependencies = [
  "anyhow",
  "bincode",
@@ -1621,9 +1626,9 @@ dependencies = [
 
 [[package]]
 name = "native_model_macro"
-version = "0.4.6"
+version = "0.4.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14143a3784bde9bb219e6082876b7d2443b5a1ce51e7f61e4ff61c2d1aaa27d2"
+checksum = "8a5b8f55f80e6fb1c105bd0c55f7e7310bb65b79d50237ff2d98da2e6eb3d878"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2099,9 +2104,9 @@ checksum = "dc375e1527247fe1a97d8b7156678dfe7c1af2fc075c9a4db3690ecd2a148068"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.71"
+version = "1.0.81"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75cb1540fadbd5b8fbccc4dddad2734eba435053f725621c070711a14bb5f4b8"
+checksum = "3d1597b0c024618f09a9c3b8655b7e430397a36d23fdafec26d6965e9eec3eba"
 dependencies = [
  "unicode-ident",
 ]
@@ -2224,7 +2229,18 @@ checksum = "f2ff9a1f06a88b01621b7ae906ef0211290d1c8a168a15542486a8f61c0833b9"
 
 [[package]]
 name = "redb"
-version = "1.4.0"
+version = "1.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fd7f82ecd6ba647a39dd1a7172b8a1cd9453c0adee6da20cb553d83a9a460fa5"
+dependencies = [
+ "libc",
+]
+
+[[package]]
+name = "redb"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed7508e692a49b6b2290b56540384ccae9b1fb4d77065640b165835b56ffe3bb"
 dependencies = [
  "libc",
 ]
