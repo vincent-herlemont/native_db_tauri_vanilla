@@ -7,3 +7,7 @@ init:
 start:
     cd ./src-tauri; \
     cargo tauri dev
+
+expand:
+    cd ./src-tauri; \
+    cargo expand | save -f --raw build.expanded.rs
